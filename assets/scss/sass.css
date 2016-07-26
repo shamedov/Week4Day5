@@ -104,18 +104,85 @@
 
 /*team*/
 #team {
-  width: 1142px;
-  margin: 0 auto;
-  padding: 100px 0; }
-  #team .team_img .inimg {
-    width: 263px;
-    height: 280px;
-    background: #8D8D8D;
-    margin-right: 30px; }
-  #team .team_img .right0 {
-    margin-right: 0; }
+  width: 100%;
+  padding: 100px 0;
+  background: #E5EEF0; }
+  #team .inteam {
+    width: 1142px;
+    margin: 0 auto; }
+    #team .inteam .team_text {
+      padding-bottom: 30px; }
+      #team .inteam .team_text h1 {
+        font-size: 30px;
+        font-weight: bold; }
+      #team .inteam .team_text p {
+        font-size: 18px; }
+    #team .inteam .team_img .inimg {
+      width: 263px;
+      height: 280px;
+      background: #8D8D8D;
+      margin-right: 30px; }
+    #team .inteam .team_img .right0 {
+      margin-right: 0; }
 
 #team .icon_text {
-  padding: 30px 0; }
+  padding: 30px 0;
+  background: #fff;
+  width: 263px;
+  padding-left: 30px; }
+  #team .icon_text i {
+    padding-top: 15px;
+    padding-right: 15px;
+    color: #93a1a7; }
+  #team .icon_text p {
+    padding-top: 12px;
+    color: #F7AA5F; }
+
+/*featus*/
+#features {
+  width: 1142px;
+  margin: 0 auto;
+  padding-top: 100px; }
+  #features .featname h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #features .featname p {
+    font-size: 18px;
+    text-transform: uppercase; }
+  #features div:nth-child(2) {
+    margin-left: 13px; }
+  #features div:nth-child(5) {
+    margin-left: 13px; }
+  #features .infeat {
+    margin-top: 65px;
+    margin-left: 47px;
+    padding-bottom: 65px;
+    float: left; }
+    #features .infeat h4 {
+      font-size: 20px;
+      padding-bottom: 15px; }
+    #features .infeat p {
+      font-size: 14px;
+      line-height: 20px; }
+    #features .infeat .featicon {
+      float: left; }
+    #features .infeat .feattext {
+      width: 250px;
+      height: 95px;
+      margin-left: 40px;
+      float: left; }
+
+#features .featbutt a {
+  text-decoration: none;
+  color: #93a1a7;
+  padding: 10px 20px;
+  border-radius: 23px;
+  font-size: 14px;
+  border: none;
+  background: #29C2E1;
+  color: #fff; }
+  #features .featbutt a:hover {
+    background: #147b90; }
 
 /*# sourceMappingURL=sass.css.map */

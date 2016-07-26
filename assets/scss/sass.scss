@@ -147,33 +147,126 @@ $text_color_white:#fff;
 }
 /*team*/
 #team{
-	@include center;
+	width:$main_width;
 	padding:100px 0;
+	background:#E5EEF0;
 
-	.team_text{
+	.inteam{
+		@include center;
 
-		h1{
+		.team_text{
 
-		}
-		p{
+			padding-bottom:30px;
 
-		}
-	}
-	.team_img{
-
-		.inimg{
-			width:263px;
-			height: 280px;
-			background:$background_grey;
-			margin-right:30px;
-		}
-		.right0{
-				margin-right: 0;
+			h1{
+				font-size: 30px;
+				font-weight: bold;
 			}
+			p{
+				font-size: 18px;
+
+			}
+		}
+		.team_img{
+
+			.inimg{
+				width:263px;
+				height: 280px;
+				background:$background_grey;
+				margin-right:30px;
+			}
+			.right0{
+					margin-right: 0;
+				}
+		}
 	}
 }
 #team{
 	.icon_text{
 		padding:30px 0;
+		background:#fff;
+		width: 263px;
+		padding-left:30px;
+
+			i{
+			padding-top:15px;
+			padding-right:15px;
+			color:$text_color_grey;
+			}
+			p{
+				padding-top:12px;
+				color:#F7AA5F;
+			}
+	}
+
+}
+/*featus*/
+#features{
+	@include center;
+	padding-top:100px;
+
+	.featname{
+		h1{
+			font-size: 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		p{
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+	}
+
+	div:nth-child(2){
+		margin-left: 13px;
+	}
+	div:nth-child(5){
+		margin-left: 13px;
+	}
+
+	.infeat{
+		margin-top: 65px;
+		margin-left: 47px;
+		padding-bottom:65px;
+		@include float_l;
+
+		h4{
+			font-size: 20px;
+			padding-bottom:15px;
+		}
+		p{
+			font-size: 14px;
+			line-height: 20px
+		}
+
+		.featicon{
+			@include float_l;
+		}
+
+		.feattext{
+			width:250px;
+			height: 95px;
+			margin-left: 40px;
+			@include float_l;
+		}
+	}
+}
+#features{
+	.featbutt{
+
+		a{
+			text-decoration: none;
+			color:$text_color_grey;
+			padding:10px 20px;
+			border-radius: 23px;
+			font-size:14px;
+			border: none;
+			background:#29C2E1;
+			color:#fff;
+
+			&:hover{
+				background:darken(#29C2E1, 20%);
+			}
+		}
 	}
 }
