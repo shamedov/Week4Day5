@@ -1,5 +1,5 @@
 $main_width:100%;
-$second_width:1140px;
+$second_width:1142px;
 $background_grey:#8D8D8D;
 $text_color_grey:#93a1a7;
 $text_color_black:black;
@@ -130,4 +130,50 @@ $text_color_white:#fff;
 #fun_fuct{
 	width:$second_width;
 	@include center;
+	padding:80px 0;
+	border-top:1px solid $text_color_grey;
+
+	.fun_text{
+		padding-right:66px;
+	}
+
+		h1{
+			font-size: 60px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 14px;
+		}
+}
+/*team*/
+#team{
+	@include center;
+	padding:100px 0;
+
+	.team_text{
+
+		h1{
+
+		}
+		p{
+
+		}
+	}
+	.team_img{
+
+		.inimg{
+			width:263px;
+			height: 280px;
+			background:$background_grey;
+			margin-right:30px;
+		}
+		.right0{
+				margin-right: 0;
+			}
+	}
+}
+#team{
+	.icon_text{
+		padding:30px 0;
+	}
 }

@@ -18,8 +18,8 @@
 #header {
   background: #E5EEF0; }
   #header .top_screen {
-    width: 1140px;
-    width: 1140px;
+    width: 1142px;
+    width: 1142px;
     margin: 0 auto;
     padding: 15px 0;
     color: #93a1a7; }
@@ -31,7 +31,7 @@
 
 /*head_logo*/
 #head_logo {
-  width: 1140px;
+  width: 1142px;
   margin: 0 auto;
   padding: 20px 0; }
   #head_logo .navi {
@@ -67,7 +67,7 @@
 
 /*what we are*/
 #what_we_are {
-  width: 1140px;
+  width: 1142px;
   margin: 0 auto; }
   #what_we_are .what_text {
     width: 533px;
@@ -89,8 +89,33 @@
 
 /*fun_fuct*/
 #fun_fuct {
-  width: 1140px;
-  width: 1140px;
-  margin: 0 auto; }
+  width: 1142px;
+  width: 1142px;
+  margin: 0 auto;
+  padding: 80px 0;
+  border-top: 1px solid #93a1a7; }
+  #fun_fuct .fun_text {
+    padding-right: 66px; }
+  #fun_fuct h1 {
+    font-size: 60px;
+    font-weight: bold; }
+  #fun_fuct p {
+    font-size: 14px; }
+
+/*team*/
+#team {
+  width: 1142px;
+  margin: 0 auto;
+  padding: 100px 0; }
+  #team .team_img .inimg {
+    width: 263px;
+    height: 280px;
+    background: #8D8D8D;
+    margin-right: 30px; }
+  #team .team_img .right0 {
+    margin-right: 0; }
+
+#team .icon_text {
+  padding: 30px 0; }
 
 /*# sourceMappingURL=sass.css.map */
