@@ -228,9 +228,46 @@
 
 /*footer*/
 #footer {
-  width: 100%; }
+  width: 100%;
+  margin: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  border-top: 1px solid #E5EEF0; }
   #footer .footinfo {
     width: 1142px;
     margin: 0 auto; }
+    #footer .footinfo input[type=text] {
+      height: 40px; }
+    #footer .footinfo button {
+      height: 40px;
+      margin-left: -5px;
+      background: #29C2E1;
+      box-shadow: none;
+      border: none;
+      color: #fff; }
+    #footer .footinfo .footLogo {
+      margin-right: 156px; }
+    #footer .footinfo div:nth-child(2) {
+      margin-right: 120px; }
+    #footer .footinfo div:nth-child(3) {
+      margin-right: 110px;
+      margin-top: 40px; }
+    #footer .footinfo div:nth-child(4) {
+      margin-right: 65px; }
+
+.footinfo h5 {
+  font-weight: bold;
+  padding-bottom: 28px; }
+.footinfo li, .footinfo p {
+  padding-bottom: 25px;
+  color: #93a1a7; }
+.footinfo span {
+  font-weight: bold;
+  color: black; }
+.footinfo i {
+  color: #93a1a7;
+  margin-right: 15px; }
+
+/*end*/
 
 /*# sourceMappingURL=sass.css.map */

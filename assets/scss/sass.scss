@@ -340,8 +340,59 @@ $text_color_white:#fff;
 /*footer*/
 #footer{
 	width:$main_width;
+	margin:70px 0;
+	padding-top:70px;
+	padding-bottom:60px;
+	border-top:1px solid #E5EEF0;
 
 	.footinfo{
 		@include center;
+
+		input[type=text]{
+			height: 40px;
+		}
+		button{
+			height: 40px;
+			margin-left: -5px;
+			background:#29C2E1;
+			box-shadow: none;
+			border:none;
+			color:#fff;
+		}
+
+		.footLogo{
+			margin-right: 156px;
+			}
+		div:nth-child(2){
+				margin-right: 120px;
+		}
+		div:nth-child(3){
+				margin-right: 110px;
+				margin-top: 40px;
+		}
+		div:nth-child(4){
+				margin-right: 65px;
+		}
 	}
 }
+.footinfo{
+
+	h5{
+		font-weight: bold;
+		padding-bottom:28px;
+	}
+	li,p{
+		padding-bottom: 25px;
+		color:$text_color_grey;
+	}
+	span{
+		font-weight: bold;
+		color: black;
+	}
+	i{
+		color:$text_color_grey;
+		margin-right: 15px;
+	}
+}
+/*end*/
+
