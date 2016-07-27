@@ -93,7 +93,7 @@
   width: 1142px;
   margin: 0 auto;
   padding: 80px 0;
-  border-top: 1px solid #93a1a7; }
+  border-top: 1px solid #E5EEF0; }
   #fun_fuct .fun_text {
     padding-right: 66px; }
   #fun_fuct h1 {
@@ -142,7 +142,8 @@
 #features {
   width: 1142px;
   margin: 0 auto;
-  padding-top: 100px; }
+  padding: 100px 0;
+  border-bottom: 1px solid #E5EEF0; }
   #features .featname h1 {
     font-size: 30px;
     font-weight: bold;
@@ -173,16 +174,63 @@
       margin-left: 40px;
       float: left; }
 
-#features .featbutt a {
-  text-decoration: none;
-  color: #93a1a7;
-  padding: 10px 20px;
-  border-radius: 23px;
-  font-size: 14px;
-  border: none;
-  background: #29C2E1;
-  color: #fff; }
-  #features .featbutt a:hover {
-    background: #147b90; }
+#features .featbutt {
+  margin-top: 75px;
+  margin-left: 488px; }
+  #features .featbutt a {
+    text-decoration: none;
+    color: #93a1a7;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 23px;
+    font-size: 14px;
+    background: #29C2E1;
+    color: #fff; }
+    #features .featbutt a:hover {
+      background: #1aa1bd; }
+
+/*one month*/
+#one_month {
+  width: 1142px;
+  margin: 0 auto;
+  padding: 100px 0; }
+  #one_month div h1 {
+    font-size: 30px;
+    padding-bottom: 14px; }
+    #one_month div h1 span {
+      color: #F69B37; }
+  #one_month div p {
+    font-size: 13px;
+    text-transform: uppercase; }
+  #one_month .monthButton {
+    margin-top: 30px;
+    margin-left: 420px; }
+    #one_month .monthButton li {
+      margin-right: 26px; }
+    #one_month .monthButton li:first-child a {
+      padding: 10px 38px;
+      background: #29C2E1;
+      border-radius: 23px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #one_month .monthButton li:first-child a:hover {
+        background: #1aa1bd; }
+    #one_month .monthButton li:last-child a {
+      padding: 10px 26px;
+      background: #F69B37;
+      border-radius: 23px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #one_month .monthButton li:last-child a:hover {
+        background: #ef820b; }
+
+/*footer*/
+#footer {
+  width: 100%; }
+  #footer .footinfo {
+    width: 1142px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=sass.css.map */

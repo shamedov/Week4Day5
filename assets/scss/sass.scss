@@ -131,7 +131,7 @@ $text_color_white:#fff;
 	width:$second_width;
 	@include center;
 	padding:80px 0;
-	border-top:1px solid $text_color_grey;
+	border-top:1px solid #E5EEF0;
 
 	.fun_text{
 		padding-right:66px;
@@ -203,7 +203,9 @@ $text_color_white:#fff;
 /*featus*/
 #features{
 	@include center;
-	padding-top:100px;
+	padding:100px 0;
+	border-bottom:1px solid #E5EEF0;
+
 
 	.featname{
 		h1{
@@ -253,20 +255,93 @@ $text_color_white:#fff;
 }
 #features{
 	.featbutt{
+		margin-top:75px;
+		margin-left: 488px;
 
 		a{
 			text-decoration: none;
 			color:$text_color_grey;
+			text-transform: uppercase;
 			padding:10px 20px;
 			border-radius: 23px;
 			font-size:14px;
-			border: none;
 			background:#29C2E1;
 			color:#fff;
 
 			&:hover{
-				background:darken(#29C2E1, 20%);
+				background:darken(#29C2E1, 10%);
 			}
 		}
+	}
+}
+/*one month*/
+#one_month{
+	@include center;
+	padding:100px 0;
+
+
+	div{
+
+		h1{
+			font-size: 30px;
+			padding-bottom:14px;
+
+			span{
+				color:#F69B37;
+			}
+		}
+		p{
+			font-size: 13px;
+			text-transform: uppercase;
+		}
+	}
+
+	.monthButton{
+		margin-top:30px;
+		margin-left: 420px;
+		li{
+			margin-right: 26px;
+		}
+
+		li:first-child{
+
+			a{
+				padding:10px 38px;
+				background:#29C2E1;
+				border-radius:23px;
+				color:#fff;
+				text-decoration: none;
+				text-transform: uppercase;
+
+
+				&:hover{
+				background:darken(#29C2E1, 10%)
+				}
+			}
+
+		}
+		li:last-child{
+
+			a{
+				padding:10px 26px;
+				background:#F69B37;
+				border-radius:23px;
+				color:#fff;
+				text-decoration: none;
+				text-transform: uppercase;
+
+				&:hover{
+				background:darken(#F69B37, 10%)
+				}
+			}
+		}
+	}
+}
+/*footer*/
+#footer{
+	width:$main_width;
+
+	.footinfo{
+		@include center;
 	}
 }
