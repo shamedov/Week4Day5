@@ -22,6 +22,11 @@ $text_color_white:#fff;
 
 .inline{display:inline-block;}
 
+body{
+	font-family: 'Open Sans', sans-serif;
+
+}
+
 
 /*wrap*/
 #wrap{
@@ -101,9 +106,16 @@ $text_color_white:#fff;
 /*what we are*/
 #what_we_are{
 	@include center;
+	padding-bottom:70px;
+
+	p{
+		line-height: 24px;
+		font-size: 14px;
+		color:#55595f;
+	}
 
 	.what_text{
-		width:533px;
+		width:529px;
 		height:320px;
 		margin-top: 100px;
 
@@ -139,7 +151,6 @@ $text_color_white:#fff;
 
 		h1{
 			font-size: 60px;
-			font-weight: bold;
 		}
 		p{
 			font-size: 14px;
@@ -340,13 +351,22 @@ $text_color_white:#fff;
 /*footer*/
 #footer{
 	width:$main_width;
-	margin:70px 0;
-	padding-top:70px;
-	padding-bottom:60px;
-	border-top:1px solid #E5EEF0;
+	height:100%;
+	background:url("../_img/orange.png") no-repeat,url("../_img/blue.png") no-repeat;
+	background-position:left top,right 80px;
+	background-size:450px 310px;
 
 	.footinfo{
 		@include center;
+		height: 310px;
+		padding-top:70px;
+		padding-bottom:80px;
+		border-top:1px solid #E5EEF0;
+		border-bottom: 1px solid #E5EEF0;
+
+		div {
+			@include float_l;
+		}
 
 		input[type=text]{
 			height: 40px;
@@ -394,5 +414,13 @@ $text_color_white:#fff;
 		margin-right: 15px;
 	}
 }
-/*end*/
+.end{
+	@include center;
+	margin-top:25px;
+	margin-bottom:78px;
+
+	h5{
+		color:$text_color_grey;
+	}	
+}
 
