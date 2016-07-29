@@ -26,11 +26,14 @@ body {
     margin: 0 auto;
     padding: 15px 0;
     color: #93a1a7; }
+    #header .top_screen i {
+      font-size: 20px; }
+    #header .top_screen h5 {
+      font-size: 14px;
+      margin-right: 65px; }
     #header .top_screen p {
       text-transform: uppercase;
-      font-size: 14px; }
-    #header .top_screen p:nth-child(2) {
-      margin-right: 65px; }
+      font-size: 13px; }
 
 /*head_logo*/
 #head_logo {
@@ -103,7 +106,7 @@ body {
   padding: 80px 0;
   border-top: 1px solid #E5EEF0; }
   #fun_fuct .fun_text {
-    padding-right: 66px; }
+    padding-right: 50px; }
   #fun_fuct h1 {
     font-size: 60px; }
   #fun_fuct p {
@@ -167,6 +170,8 @@ body {
     margin-left: 47px;
     padding-bottom: 65px;
     float: left; }
+    #features .infeat:nth-child(6) {
+      margin-left: 64px; }
     #features .infeat h4 {
       font-size: 20px;
       padding-bottom: 15px; }

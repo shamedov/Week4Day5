@@ -42,14 +42,19 @@ body{
 		padding: 15px 0;
 		color:$text_color_grey;
 
-			p{
-				text-transform: uppercase;
-				font-size:14px;
+			i{
+				font-size:20px;
 			}
-
-			p:nth-child(2){
+			h5{
+				font-size: 14px;
 				margin-right: 65px;
 			}
+
+			p{
+				text-transform: uppercase;
+				font-size:13px;
+			}
+
 	}
 }
 /*head_logo*/
@@ -146,7 +151,7 @@ body{
 	border-top:1px solid #E5EEF0;
 
 	.fun_text{
-		padding-right:66px;
+		padding-right:50px;
 	}
 
 		h1{
@@ -242,6 +247,10 @@ body{
 		margin-left: 47px;
 		padding-bottom:65px;
 		@include float_l;
+
+		&:nth-child(6){
+			margin-left:64px;
+		}
 
 		h4{
 			font-size: 20px;
