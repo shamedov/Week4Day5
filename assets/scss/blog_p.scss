@@ -1,5 +1,7 @@
 $main_width:100%;
 $second_width:1142px;
+$width830:830px;
+$width262:262px;
 $background_grey:#8D8D8D;
 $text_color_grey:#93a1a7;
 $text_color_black:black;
@@ -108,8 +110,31 @@ body{
 		}
 	}
 }
-/**/
+//////////////////////////blog_post secion
+#blog_p{
+	@include center;
+	margin-top:100px;
+}
+/*content*/
+.content{
 
+	.image{
+		width:828px;
+		height:334px;
+		background:#8D8D8D;
+	}
+}
+/*menubar*/
+.menubar{
+
+	.bar{
+		width:$width262;
+		height: 500px;
+		background:green;
+	}
+}
+
+///////////////////////////blog_post section end
 /*footer*/
 #footer{
 	width:$main_width;
