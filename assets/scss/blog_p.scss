@@ -1,11 +1,12 @@
 $main_width:100%;
 $second_width:1142px;
-$width830:830px;
+$width828:828px;
 $width262:262px;
 $background_grey:#8D8D8D;
 $text_color_grey:#93a1a7;
 $text_color_black:black;
 $text_color_white:#fff;
+$color_Orange:#f7941d;
 @mixin float_r{
 	float:right;}
 
@@ -114,14 +115,201 @@ body{
 #blog_p{
 	@include center;
 	margin-top:100px;
+	margin-bottom:100px;
 }
 /*content*/
 .content{
+	width:$width828;
 
 	.image{
 		width:828px;
 		height:334px;
 		background:#8D8D8D;
+	}
+}
+//blog_head-contentin icindedi,amma element cox olacagi ucun bucur ayiriram
+.blog_head{
+	margin-top:40px;
+
+	.blog_name{
+		margin-bottom: 40px;
+
+		h1{
+			font-size: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 18px;
+		}
+		p{
+			font-size: 15px;
+			text-transform: uppercase;
+
+			span{
+				color:$color_Orange;
+			}
+		}
+	}
+	.blog_info{
+
+		p{
+			font-size: 14px;
+			line-height: 20px;
+		}
+		ul{
+			margin:60px 0;
+			margin-left: 97px;
+
+			li{
+				padding-bottom:25px;
+				i{
+				padding-right:16px;
+				color:$color_Orange;
+				}
+
+				&:last-child{
+					padding-bottom:0;
+				}
+			}
+		}
+	}
+} 
+//madona ... contentin icindedi bunlar
+
+.madona{
+	width:$width828;
+	height:190px;
+	background:#E3EEF0;
+	margin-top:70px;
+	margin-bottom:75px;
+
+	.madona_img{
+	    display: inline-block;
+		width:122px;
+		height:122px;
+		border-radius:50%;
+		background:#8D8D8D;
+		margin-top: 32px;
+		margin-left: 40px;
+	}
+	.madona_info{
+		width:580px;
+		float:right;
+		margin-top: 55px;
+		margin-right: 25px;
+
+		h4{
+			font-size: 15px;
+			padding-bottom:25px;
+			span{
+				color:$color_Orange;
+			}
+		}
+		p{
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+}
+//comments
+.comments{
+	h1{
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 40px;
+	}
+
+	.user{
+		padding-bottom:48px;
+		padding-top:50px;
+		border-bottom:1px solid #e5eef0;
+
+		&:first-child{
+			padding-top:0;
+		}
+		&:nth-child(4){
+			margin-left: 98px;
+			border-bottom:none;
+		}
+		&:last-child{
+			border-top:1px solid #e5eef0;
+		}
+		.comment_img{
+			display: inline-block;
+			width:68px;
+			height:68px;
+			background:#8D8D8D;
+			border-radius:50%;
+		}
+		.user_comment{
+			
+			h4,h5{
+				font-size: 14px;
+				font-weight: bold;
+				display: inline-block;
+			}
+			h5{
+				text-transform: uppercase;
+				color:$color_Orange; 
+			}
+			p{
+				font-size: 14px;
+				width:700px;
+				margin-top: 26px;
+				line-height: 18px;
+			}
+		}
+		.mattalica{
+			p{
+				width:620px;
+			}
+		}
+	}
+}
+//LEAVE
+.leave{
+	margin-top:100px;
+
+	h1{
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	input[type=text]{
+		width:405px;
+		height: 47px;
+		margin-bottom:15px;
+		background:#e3eef0;
+		border:none;
+		padding-left:25px;
+
+		&:first-child{
+			margin-right:13px;
+		}
+		&:nth-child(3){
+			margin-right:13px;
+		}
+	}
+	textarea{
+		width:100%;
+		height: 156px;
+		background:#e3eef0;
+		border:none;
+		padding-left:25px;
+		padding-top:16px;
+		resize:none;
+	}
+	button{
+		margin-top: 30px;
+		padding:10px 40px;
+		background:#29C2E1;
+		border:none;
+		border-radius:23px;
+		color:$text_color_white;
+
+		&:hover{
+			background:darken(#29C2E1, 10%)
+		}
 	}
 }
 /*menubar*/
