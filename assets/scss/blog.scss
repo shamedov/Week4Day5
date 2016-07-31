@@ -7,6 +7,36 @@ $text_color_grey:#93a1a7;
 $text_color_black:black;
 $text_color_white:#fff;
 $color_Orange:#f7941d;
+@mixin but_blog{
+	margin-top:30px;
+		padding:10px 27px;
+		background:#29C2E1;
+		border:none;
+		border-radius:23px;
+		color:$text_color_white;
+		font-size: 14px;
+		text-transform: uppercase;
+
+		&:hover{
+			background:darken(#29C2E1, 10%);
+		}
+}
+@mixin img_blog{
+	width:828px;
+	height:334px;
+	background:#8D8D8D;
+	margin-bottom: 40px;
+}
+@mixin h_blog{
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
+@mixin p_blog{
+	font-size: 15px;
+	text-transform: uppercase;
+}
 @mixin float_r{
 	float:right;}
 
@@ -121,29 +151,21 @@ body{
 /*content*/
 .content{
 	width:$width828;
-
-	.image{
-		width:828px;
-		height:334px;
-		background:#8D8D8D;
-	}
 }
 //blog_head-contentin icindedi,amma element cox olacagi ucun bucur ayiriram
 .blog_head{
-	margin-top:40px;
 
+	.image{
+		@include img_blog;	
+	}
 	.blog_name{
 		margin-bottom: 40px;
 
 		h1{
-			font-size: 24px;
-			font-weight: bold;
-			text-transform: uppercase;
-			margin-bottom: 18px;
+			@include h_blog;
 		}
 		p{
-			font-size: 15px;
-			text-transform: uppercase;
+			@include p_blog;
 
 			span{
 				color:$color_Orange;
@@ -159,19 +181,22 @@ body{
 
 	}
 	button{
-		margin-top:30px;
-		padding:10px 27px;
-		background:#29C2E1;
-		border:none;
-		border-radius:23px;
-		color:$text_color_white;
-		font-size: 14px;
-		text-transform: uppercase;
+		@include but_blog;
+	}
+}
+/*karusel*/
+.karusel{
+	.image{
+		@include img_blog;
+	}
+	.k-name{
+		margin-bottom: 40px;
 
-		&:hover{
-			background:darken(#29C2E1, 10%);
+		h1{
+			@include h_blog;
 		}
 	}
+
 }
 /*menubar bu sehifenin sag terefidi*/
 .menubar{

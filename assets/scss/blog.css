@@ -81,39 +81,52 @@ body {
 /*content*/
 .content {
   width: 828px; }
-  .content .image {
-    width: 828px;
-    height: 334px;
-    background: #8D8D8D; }
 
-.blog_head {
-  margin-top: 40px; }
-  .blog_head .blog_name {
-    margin-bottom: 40px; }
-    .blog_head .blog_name h1 {
-      font-size: 24px;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 18px; }
-    .blog_head .blog_name p {
-      font-size: 15px;
-      text-transform: uppercase; }
-      .blog_head .blog_name p span {
-        color: #f7941d; }
-  .blog_head .blog_info p {
-    font-size: 14px;
-    line-height: 20px; }
-  .blog_head button {
-    margin-top: 30px;
-    padding: 10px 27px;
-    background: #29C2E1;
-    border: none;
-    border-radius: 23px;
-    color: #fff;
-    font-size: 14px;
+.blog_head .image {
+  width: 828px;
+  height: 334px;
+  background: #8D8D8D;
+  margin-bottom: 40px; }
+.blog_head .blog_name {
+  margin-bottom: 40px; }
+  .blog_head .blog_name h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 18px; }
+  .blog_head .blog_name p {
+    font-size: 15px;
     text-transform: uppercase; }
-    .blog_head button:hover {
-      background: #1aa1bd; }
+    .blog_head .blog_name p span {
+      color: #f7941d; }
+.blog_head .blog_info p {
+  font-size: 14px;
+  line-height: 20px; }
+.blog_head button {
+  margin-top: 30px;
+  padding: 10px 27px;
+  background: #29C2E1;
+  border: none;
+  border-radius: 23px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase; }
+  .blog_head button:hover {
+    background: #1aa1bd; }
+
+/*karusel*/
+.karusel .image {
+  width: 828px;
+  height: 334px;
+  background: #8D8D8D;
+  margin-bottom: 40px; }
+.karusel .k-name {
+  margin-bottom: 40px; }
+  .karusel .k-name h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 18px; }
 
 /*menubar bu sehifenin sag terefidi*/
 .menubar {
