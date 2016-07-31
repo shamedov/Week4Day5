@@ -8,7 +8,7 @@ $text_color_black:black;
 $text_color_white:#fff;
 $color_Orange:#f7941d;
 @mixin but_blog{
-	margin-top:30px;
+		margin-top:30px;
 		padding:10px 27px;
 		background:#29C2E1;
 		border:none;
@@ -16,7 +16,7 @@ $color_Orange:#f7941d;
 		color:$text_color_white;
 		font-size: 14px;
 		text-transform: uppercase;
-
+		
 		&:hover{
 			background:darken(#29C2E1, 10%);
 		}
@@ -154,6 +154,7 @@ body{
 }
 //blog_head-contentin icindedi,amma element cox olacagi ucun bucur ayiriram
 .blog_head{
+	margin-bottom:72px;
 
 	.image{
 		@include img_blog;	
@@ -186,15 +187,193 @@ body{
 }
 /*karusel*/
 .karusel{
+	margin-top:72px;
+	margin-bottom:72px;
 	.image{
 		@include img_blog;
+
+		i{
+			font-size: 2em;
+			color:$text_color_white;
+			margin-top: 152px;
+		}
 	}
-	.k-name{
+	.k_name{
 		margin-bottom: 40px;
 
 		h1{
 			@include h_blog;
 		}
+		p{
+			@include p_blog;
+
+			span{
+				color:$color_Orange;
+			}
+		}
+	}
+	.k_info{
+
+		p{
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	button{
+		@include but_blog;
+	}
+
+}
+/*video*/
+.video{
+	margin-top:72px;
+	margin-bottom:72px;
+	.image{
+		@include img_blog;
+		padding-top:280px;
+		padding-left:10px;
+
+		i{
+			color:$text_color_white;
+			padding:10px;
+			background: #5B5B5B;
+			border-right:1px solid #686868;
+
+			&:last-child{
+				border:none;
+			}
+		}
+	}
+	.v_name{
+		margin-bottom: 40px;
+
+		h1{
+			@include h_blog;
+		}
+		p{
+			@include p_blog;
+
+			span{
+				color:$color_Orange;
+			}
+		}
+	}
+	.v_info{
+
+		p{
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	button{
+		@include but_blog;
+	}
+
+}
+
+.v_play{
+	width:800px;
+	height: 40px;
+	background:#5B5B5B;
+	padding-left:13px;
+
+	.play_line{
+		display:inline-block;
+		margin-bottom: 2px;
+
+		.play_line_orange{
+		width:145px;
+		height: 6px;
+		background:$color_Orange;
+		}
+		.play_line_white{
+			width:550px;
+			height: 6px;
+			background:$text_color_white;
+		}
+	}
+
+}
+//music 
+.music{
+	margin-top:72px;
+	.m_name{
+		margin-bottom: 40px;
+
+		h1{
+			@include h_blog;
+		}
+		p{
+			@include p_blog;
+
+			span{
+				color:$color_Orange;
+			}
+		}
+	}
+	.m_info{
+		p{
+		font-size: 14px;
+		line-height: 20px;
+		}
+	}
+	button{
+		@include but_blog;
+	}
+	ul{
+		margin-top: 100px;
+		li{
+			@include float_l;
+			width:40px;
+			height: 40px;
+			text-align:center;
+			padding-top:13px;
+			background:#29C2E1;
+			margin-right: 10px;
+			color:$text_color_white;
+
+			&:first-child{
+				background:$color_Orange;
+			}
+			&:nth-child(5){
+				color:$text_color_black;
+				background:$text_color_white;
+			}
+		}
+	}
+
+}
+.m_play{
+	width:800px;
+	height: 40px;
+	background:#DDDDDD;
+	padding-left:13px;
+	margin-bottom:40px;
+
+	.music_line{
+		display:inline-block;
+		margin-bottom: 2px;
+
+		.music_line_orange{
+		width:145px;
+		height: 6px;
+		background:$color_Orange;
+		}
+		.music_line_gray{
+			width:550px;
+			height: 6px;
+			background:#C8C8C8;
+		}
+	}
+	i{
+		color:$text_color_black;
+		padding:10px;
+		background: #DDDDDD;
+		border-right:1px solid #D0D0D0;
+
+		&:last-child{
+				border:none;
+			}
 	}
 
 }
