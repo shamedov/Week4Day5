@@ -154,7 +154,8 @@ body{
 }
 //blog_head-contentin icindedi,amma element cox olacagi ucun bucur ayiriram
 .blog_head{
-	margin-bottom:72px;
+	padding-bottom:72px;
+	border-bottom: 1px solid #e5eef0;
 
 	.image{
 		@include img_blog;	
@@ -188,7 +189,8 @@ body{
 /*karusel*/
 .karusel{
 	margin-top:72px;
-	margin-bottom:72px;
+	padding-bottom:72px;
+	border-bottom: 1px solid #e5eef0;
 	.image{
 		@include img_blog;
 
@@ -227,7 +229,8 @@ body{
 /*video*/
 .video{
 	margin-top:72px;
-	margin-bottom:72px;
+	padding-bottom:72px;
+	border-bottom: 1px solid #e5eef0;
 	.image{
 		@include img_blog;
 		padding-top:280px;

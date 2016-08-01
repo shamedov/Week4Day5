@@ -83,7 +83,8 @@ body {
   width: 828px; }
 
 .blog_head {
-  margin-bottom: 72px; }
+  padding-bottom: 72px;
+  border-bottom: 1px solid #e5eef0; }
   .blog_head .image {
     width: 828px;
     height: 334px;
@@ -119,7 +120,8 @@ body {
 /*karusel*/
 .karusel {
   margin-top: 72px;
-  margin-bottom: 72px; }
+  padding-bottom: 72px;
+  border-bottom: 1px solid #e5eef0; }
   .karusel .image {
     width: 828px;
     height: 334px;
@@ -159,7 +161,8 @@ body {
 /*video*/
 .video {
   margin-top: 72px;
-  margin-bottom: 72px; }
+  padding-bottom: 72px;
+  border-bottom: 1px solid #e5eef0; }
   .video .image {
     width: 828px;
     height: 334px;
