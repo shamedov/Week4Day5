@@ -1,0 +1,329 @@
+$main_width:100%;
+$second_width:1142px;
+$width828:828px;
+$width262:262px;
+$background_grey:#8D8D8D;
+$text_color_grey:#93a1a7;
+$text_color_black:black;
+$text_color_white:#fff;
+$color_Orange:#f7941d;
+@mixin but_blog{
+		margin-top:30px;
+		padding:10px 27px;
+		background:#29C2E1;
+		border:none;
+		border-radius:23px;
+		color:$text_color_white;
+		font-size: 14px;
+		text-transform: uppercase;
+		
+		&:hover{
+			background:darken(#29C2E1, 10%);
+		}
+}
+@mixin img_blog{
+	width:828px;
+	height:334px;
+	background:#8D8D8D;
+	margin-bottom: 40px;
+}
+@mixin h_blog{
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
+@mixin p_blog{
+	font-size: 15px;
+	text-transform: uppercase;
+}
+@mixin float_r{
+	float:right;}
+
+@mixin float_l{
+	float:left;}
+
+@mixin center {
+	width:$second_width;
+	margin:0 auto;
+}
+.right{float:right;}
+
+.left{float:left;}
+
+.clear{clear:both;}
+
+.inline{display:inline-block;}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/*wrap*/
+#wrap{
+	width:$main_width;
+}
+/*header*/
+#header{
+	background:#E5EEF0;
+
+	.top_screen{
+		width:$second_width;
+		@include center;
+		padding: 15px 0;
+		color:$text_color_grey;
+
+			i{
+				font-size:20px;
+			}
+			h5{
+				font-size: 14px;
+				margin-right: 65px;
+			}
+
+			p{
+				text-transform: uppercase;
+				font-size:13px;
+			}
+
+	}
+}
+/*head_logo*/
+#head_logo{
+	@include center;
+	padding:20px 0;
+
+	.navi{
+		padding:13px 0;
+
+		li{
+			float:left;
+			
+
+			a{
+				text-decoration: none;
+				color:$text_color_grey;
+				padding:10px 20px;
+				border-radius: 23px;
+				font-size:14px;
+
+				&:hover{
+					background:#29C2E1;
+					color:#fff;
+				}
+				i{
+					padding-left:2px;
+				}
+			}
+		}
+	}
+}
+/*baner*/
+#baner{
+
+	.baner_img{
+		width:$main_width;
+		height: 310px;
+		background:$background_grey;
+		padding-top:120px;
+		color:white;
+
+		h1{
+			font-size:48px;
+			font-weight: bold;
+			padding-bottom:20px;
+		}
+		p{
+			font-size:14px;
+			text-transform: uppercase;
+		}
+	}
+}
+/*contant*/
+#contact_us{
+	@include center;
+	border-bottom: 1px solid #e5eef0;
+
+	.location{
+		margin-top: 100px;
+		h1{
+			font-size: 30px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+		p{
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+		.loc_image{
+			width:$second_width;
+			height:417px;
+			background: $text_color_grey;
+
+			div{
+				margin:0 auto;
+				width:250px;
+				height:60px;
+				padding-top:180px;
+
+				h1{
+					font-size: 30px;
+					text-transform: uppercase;
+				    font-weight: bold;
+				    color:$text_color_white;
+				}
+				i{
+					font-size: 3em;
+					color:$color_Orange;
+					margin-top: -35px;//i-ni yuxari galdirmag ucun
+				}
+			}
+		}
+	}
+}
+.details{
+	width:$second_width;
+
+	.personal{
+		margin-top:70px;
+		margin-bottom: 100px;
+		i{
+			font-size:2em;
+			width:65px;
+			height:65px;
+			padding-top:15px;
+			border:1px solid #29C2E1;
+			border-radius:50%;
+			margin-bottom: 20px;
+		}
+		h5{
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			color:#23282f;
+		}
+	}
+}
+/*contact form*/
+#contact_form{
+	padding-top:100px;
+	padding-bottom:100px;
+	@include center;
+
+	h1{
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	input[type=text]{
+		width:560px;
+		height: 47px;
+		margin-bottom:15px;
+		background:#e3eef0;
+		border:none;
+		padding-left:25px;
+
+		&:first-child{
+			margin-right:13px;
+		}
+		&:nth-child(3){
+			margin-right:13px;
+		}
+	}
+	textarea{
+		width:100%;
+		height: 156px;
+		background:#e3eef0;
+		border:none;
+		padding-left:25px;
+		padding-top:16px;
+		resize:none;
+	}
+	button{
+		margin-top: 30px;
+		padding:10px 40px;
+		background:#29C2E1;
+		border:none;
+		border-radius:23px;
+		color:$text_color_white;
+
+		&:hover{
+			background:darken(#29C2E1, 10%);
+		}
+	}
+}
+/*footer*/
+#footer{
+	width:$main_width;
+	height:100%;
+	background:url("../_img/orange.png") no-repeat,url("../_img/blue.png") no-repeat;
+	background-position:left top,right 80px;
+	background-size:450px 310px;
+
+	.footinfo{
+		@include center;
+		height: 310px;
+		padding-top:70px;
+		padding-bottom:80px;
+		border-top:1px solid #E5EEF0;
+		border-bottom: 1px solid #E5EEF0;
+
+		div {
+			@include float_l;
+		}
+
+		input[type=text]{
+			height: 40px;
+		}
+		button{
+			height: 40px;
+			margin-left: -5px;
+			background:#29C2E1;
+			box-shadow: none;
+			border:none;
+			color:#fff;
+		}
+
+		.footLogo{
+			margin-right: 156px;
+			}
+		div:nth-child(2){
+				margin-right: 120px;
+		}
+		div:nth-child(3){
+				margin-right: 110px;
+				margin-top: 40px;
+		}
+		div:nth-child(4){
+				margin-right: 65px;
+		}
+	}
+}
+.footinfo{
+
+	h5{
+		font-weight: bold;
+		padding-bottom:28px;
+	}
+	li,p{
+		padding-bottom: 25px;
+		color:$text_color_grey;
+	}
+	span{
+		font-weight: bold;
+		color: black;
+	}
+	i{
+		color:$text_color_grey;
+		margin-right: 15px;
+	}
+}
+.end{
+	@include center;
+	margin-top:25px;
+	margin-bottom:78px;
+
+	h5{
+		color:$text_color_grey;
+	}	
+}
