@@ -107,7 +107,8 @@ body {
   #we_are span {
     text-transform: uppercase;
     background: #F7941D;
-    color: #fff; }
+    color: #fff;
+    padding: 1px 5px; }
   #we_are h1 {
     margin-bottom: 40px;
     margin-top: 10px;
@@ -157,11 +158,14 @@ body {
     #features .feat_child .featname h1 {
       font-size: 30px;
       font-weight: bold;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-top: 5px; }
     #features .feat_child .featname span {
       font-size: 14px;
       text-transform: uppercase;
-      background: #F7941D; }
+      background: #F7941D;
+      color: #fff;
+      padding: 1px 5px; }
     #features .feat_child div:nth-child(2) {
       margin-left: 13px; }
     #features .feat_child div:nth-child(5) {
@@ -190,22 +194,41 @@ body {
 /*happy*/
 #happy {
   width: 100%;
-  background: #F7941D; }
+  background: #F7941D;
+  padding: 100px 0; }
   #happy .inHappy {
     width: 1142px;
     margin: 0 auto; }
+    #happy .inHappy .h-head span {
+      font-size: 13px;
+      background: black;
+      color: #fff;
+      padding: 1px 5px;
+      text-transform: uppercase; }
+    #happy .inHappy .h-head h1 {
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 5px; }
     #happy .inHappy .h-head i {
       width: 50px;
       height: 50px;
       border-radius: 50%;
       border: 1px solid #fff;
-      padding-top: 15px; }
+      padding-top: 15px;
+      color: white;
+      margin-top: 15px;
+      margin-bottom: 25px; }
     #happy .inHappy .h-text {
-      width: 850px;
+      width: 900px;
       margin: 0 auto; }
       #happy .inHappy .h-text p {
         font-size: 15px;
-        line-height: 20px; }
+        line-height: 20px;
+        padding: 0 45px; }
+      #happy .inHappy .h-text h1 {
+        margin-top: 46px;
+        margin-bottom: 30px; }
     #happy .inHappy .hexagon {
       width: 55px;
       height: 37px;
@@ -238,6 +261,18 @@ body {
         border-left: 27px solid transparent;
         border-right: 27px solid transparent;
         border-top: 15px solid grey; }
+
+/*pricing*/
+#pricing {
+  width: 1142px;
+  margin: 0 auto;
+  background: #EBEFF2; }
+  #pricing .p_info {
+    width: 262px;
+    height: 390px;
+    background: #fff;
+    float: left;
+    margin-right: 30px; }
 
 /*footer*/
 #footer {
