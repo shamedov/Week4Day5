@@ -100,7 +100,7 @@ body{
 		.baner_text{
 			position:absolute;
 			bottom:360px;
-			left:35%;
+			left:40%;
 
 			h1{
 			font-size:48px;
@@ -377,7 +377,7 @@ body{
 	background:#EBEFF2;
 
 	.p_info{
-		width:262px;
+		width:263px;
 		height:390px;
 		background:$text_color_white;
 		@include float_l;

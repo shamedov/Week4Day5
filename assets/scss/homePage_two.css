@@ -64,7 +64,7 @@ body {
   #baner .baner_img .baner_text {
     position: absolute;
     bottom: 360px;
-    left: 35%; }
+    left: 40%; }
     #baner .baner_img .baner_text h1 {
       font-size: 48px;
       font-weight: bold;
@@ -268,7 +268,7 @@ body {
   margin: 0 auto;
   background: #EBEFF2; }
   #pricing .p_info {
-    width: 262px;
+    width: 263px;
     height: 390px;
     background: #fff;
     float: left;

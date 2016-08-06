@@ -214,10 +214,19 @@
 		
 	</section>
 	<script type="text/javascript">
+	//local business slide 
 		var imageArr=["assets/_img/Deadpool.jpg","assets/_img/Deadpool2.jpg","assets/_img/spider1.jpg"]
+		var boostArr=["ok nigga","ooops","this is"]
+		var headArr=["welcome","you know me","Spider-man"]
 
 		imgSource=document.getElementsByClassName('baner_img')[0].getElementsByTagName("img")[0];
 		imgSource.src=imageArr[0];
+
+		bstSource=document.getElementsByClassName('baner_text')[0].getElementsByTagName("p")[0];
+		bstSource.innerHTML=boostArr[0]
+
+		headSource=document.getElementsByClassName('baner_text')[0].getElementsByTagName("h1")[0];
+		headSource.innerHTML=headArr[0]
 
 			count=0;
 
@@ -228,10 +237,11 @@
 					count=imageArr.length-1;
 				}
 				imgSource.src=imageArr[count];
+				bstSource.innerHTML=boostArr[count];
+				headSource.innerHTML=headArr[count];
 				
-
 			}
-			setTimeout(prev(), 2000);
+	
 			function next(){
 				
 				count++;
@@ -239,9 +249,31 @@
 					count=0;
 				}
 				imgSource.src=imageArr[count];
-				console.log(count)
+				bstSource.innerHTML=boostArr[count]
+				headSource.innerHTML=headArr[count];
 				
 			}
+		//local business slide bitir
+
+		//happy clients slide bashlayir
+			var happyArr=["Единственный способ стать умнее играть с более умным противником.","Первое правило бизнеса — защищайте свои инвестиции.","Войны нельзя избежать, её можно лишь отсрочить к выгоде вашего противника"]
+			happySource=document.getElementsByClassName('h-text')[0].getElementsByTagName('p')[0];
+			happySource.innerHTML=happyArr[0];
+
+			var citatArr=["основы шахмат 1883 г.","этикет банкира 1775 г.","1502 г. Никколо́ Макиаве́лли"]
+			citatSource=document.getElementsByClassName('h-text')[0].getElementsByTagName('h1')[0];
+			citatSource.innerHTML=citatArr[0]
+
+			function avtoslide(){
+				count++;
+				if(count==happyArr.length){
+					count=0;
+				}
+				happySource.innerHTML=happyArr[count];
+				citatSource.innerHTML=citatArr[count];
+			}
+			setInterval(avtoslide,2000)
+			//happy clients slide bitir
 
 	</script>
 </body>
