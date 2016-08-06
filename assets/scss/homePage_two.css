@@ -69,17 +69,19 @@ body {
       font-size: 48px;
       font-weight: bold;
       padding-bottom: 20px;
-      color: #CDDC39; }
+      color: #CDDC39;
+      text-transform: uppercase; }
     #baner .baner_img .baner_text p {
       font-size: 14px;
       text-transform: uppercase;
       color: #93a1a7; }
     #baner .baner_img .baner_text button {
-      padding: 20px 30px;
       background: #29C2E1;
       border: none;
       border-radius: 5px;
-      outline-style: none; }
+      height: 50px;
+      width: 140px;
+      text-transform: uppercase; }
   #baner .baner_img .btnGroup {
     position: absolute;
     bottom: 200px;
@@ -266,13 +268,176 @@ body {
 #pricing {
   width: 1142px;
   margin: 0 auto;
-  background: #EBEFF2; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  #pricing .pricHead {
+    margin-bottom: 50px; }
+    #pricing .pricHead span {
+      font-size: 13px;
+      background: #f7941d;
+      color: #fff;
+      padding: 1px 5px;
+      text-transform: uppercase; }
+    #pricing .pricHead h1 {
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 1px; }
   #pricing .p_info {
     width: 263px;
     height: 390px;
     background: #fff;
     float: left;
-    margin-right: 30px; }
+    margin-right: 30px;
+    border: 1px solid #E6EDEE; }
+    #pricing .p_info .p1 {
+      height: 66px;
+      padding-top: 36px;
+      border: 1px solid #E6EDEE; }
+      #pricing .p_info .p1 span {
+        border-bottom: 1px solid #f7941d; }
+      #pricing .p_info .p1 h1 {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase; }
+    #pricing .p_info .p2 {
+      height: 60px;
+      padding-top: 25px;
+      border-bottom: 1px solid #E6EDEE; }
+      #pricing .p_info .p2 h5 span {
+        color: #f7941d; }
+    #pricing .p_info .p3 {
+      padding-top: 40px; }
+      #pricing .p_info .p3 p {
+        line-height: 40px; }
+    #pricing .p_info button {
+      margin-top: 80px;
+      height: 45px;
+      width: 140px;
+      background: #f7941d;
+      border: none;
+      color: #fff;
+      border-radius: 5px; }
+      #pricing .p_info button:hover {
+        background: #29C2E1; }
+
+/*team*/
+#team {
+  width: 100%;
+  padding: 100px 0;
+  background: #E5EEF0; }
+  #team .inteam {
+    width: 1142px;
+    margin: 0 auto; }
+    #team .inteam .team_text {
+      padding-bottom: 30px; }
+      #team .inteam .team_text span {
+        font-size: 13px;
+        background: #f7941d;
+        color: #fff;
+        padding: 1px 5px;
+        text-transform: uppercase; }
+      #team .inteam .team_text h1 {
+        font-size: 30px;
+        font-weight: bold;
+        font-weight: uppercase;
+        text-transform: uppercase; }
+    #team .inteam .team_img .inimg {
+      width: 263px;
+      height: 280px;
+      margin-right: 30px; }
+      #team .inteam .team_img .inimg img {
+        width: 100%;
+        height: 100%; }
+    #team .inteam .team_img .right0 {
+      margin-right: 0; }
+
+#team .icon_text {
+  padding: 30px 0;
+  background: #fff;
+  width: 263px;
+  padding-left: 30px; }
+  #team .icon_text:hover {
+    background: #29C2E1; }
+    #team .icon_text:hover i {
+      color: white; }
+  #team .icon_text i {
+    padding-top: 15px;
+    padding-right: 15px;
+    color: #93a1a7; }
+  #team .icon_text p {
+    padding-top: 12px;
+    color: #F7AA5F; }
+
+/*our blog*/
+#our_blog {
+  width: 1142px;
+  margin: 0 auto;
+  padding-top: 100px; }
+  #our_blog span {
+    font-size: 13px;
+    background: #f7941d;
+    color: #fff;
+    padding: 1px 5px;
+    text-transform: uppercase; }
+  #our_blog h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-weight: uppercase;
+    text-transform: uppercase;
+    padding-bottom: 35px; }
+  #our_blog .blogImage {
+    width: 100%;
+    height: 395px;
+    position: relative; }
+    #our_blog .blogImage img {
+      width: 100%;
+      height: 100%; }
+    #our_blog .blogImage div {
+      width: 80px;
+      height: 80px;
+      background: #29C2E1;
+      padding-top: 20px;
+      margin: 0;
+      position: absolute;
+      top: 0; }
+      #our_blog .blogImage div h1 {
+        font-size: 34px;
+        color: white;
+        padding-bottom: 0;
+        font-weight: bold; }
+      #our_blog .blogImage div p {
+        color: white;
+        font-weight: bold; }
+  #our_blog .blogTextName {
+    width: 975px;
+    margin: 40px auto;
+    margin-bottom: 100px; }
+    #our_blog .blogTextName h2 {
+      font-size: 20px;
+      font-weight: bold; }
+    #our_blog .blogTextName p {
+      text-transform: uppercase;
+      font-size: 14px; }
+      #our_blog .blogTextName p i {
+        color: #f7941d;
+        padding-right: 5px;
+        font-size: 16px; }
+      #our_blog .blogTextName p:nth-child(3) {
+        padding-right: 40px; }
+    #our_blog .blogTextName .blogText {
+      margin-top: 40px; }
+      #our_blog .blogTextName .blogText p {
+        text-transform: none;
+        line-height: 22px; }
+    #our_blog .blogTextName button {
+      margin-top: 50px;
+      height: 45px;
+      width: 140px;
+      background: #f7941d;
+      border: none;
+      color: #fff;
+      border-radius: 5px; }
 
 /*footer*/
 #footer {
