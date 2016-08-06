@@ -364,7 +364,7 @@
 	</section>
 	<script type="text/javascript">
 	//local business slide 
-		var imageArr=["assets/_img/Deadpool.jpg","assets/_img/Deadpool2.jpg","assets/_img/spider1.jpg"]
+		var imageArr=["assets/_img/deadpool.jpg","assets/_img/Deadpool2.jpg","assets/_img/spider1.jpg"]
 		var boostArr=["ok nigga","ooops","this is"]
 		var headArr=["welcome","you know me","Spider-man"]
 
@@ -377,7 +377,7 @@
 		headSource=document.getElementsByClassName('baner_text')[0].getElementsByTagName("h1")[0];
 		headSource.innerHTML=headArr[0]
 
-			count=0;
+		var	count=0;
 
 			function prev(){
 
@@ -389,24 +389,27 @@
 				imgSource.src=imageArr[count];
 				bstSource.innerHTML=boostArr[count];
 				headSource.innerHTML=headArr[count];
+				console.log(count)
 				
 			}
 	
 			function next(){
 				
 				count++;
-				if(count>imageArr.length-1){
-					count=imageArr.length-1;
+				if(count==imageArr.length){
+					count=0;
 
 				}
 				imgSource.src=imageArr[count];
 				bstSource.innerHTML=boostArr[count]
 				headSource.innerHTML=headArr[count];
+				console.log(count)
 				
 			}
 		//local business slide bitir
 
 		//happy clients slide bashlayir
+		
 			var happyArr=["Единственный способ стать умнее играть с более умным противником.","Первое правило бизнеса — защищайте свои инвестиции.","Войны нельзя избежать, её можно лишь отсрочить к выгоде вашего противника"]
 			happySource=document.getElementsByClassName('h-text')[0].getElementsByTagName('p')[0];
 			happySource.innerHTML=happyArr[0];
@@ -415,13 +418,15 @@
 			citatSource=document.getElementsByClassName('h-text')[0].getElementsByTagName('h1')[0];
 			citatSource.innerHTML=citatArr[0]
 
+			x=0;
+
 			function avtoslide(){
-				count++;
-				if(count==happyArr.length){
-					count=0;
+				x++;
+				if(x==happyArr.length){
+					x=0;
 				}
-				happySource.innerHTML=happyArr[count];
-				citatSource.innerHTML=citatArr[count];
+				happySource.innerHTML=happyArr[x];
+				citatSource.innerHTML=citatArr[x];
 			}
 			setInterval(avtoslide,2000)
 			//happy clients slide bitir
